@@ -10,10 +10,11 @@ body {
     background: url(img/grid.jpg);
     background-blend-mode:hard-light;
     background-size: cover;
+    background-repeat:repeat-y;
     background-color:rgba(0, 0, 0,0.65);
     margin: auto;
     font-family: 'press start 2p';
-    width: 900px;
+    max-width: 900px;
 }
 
 #header {
@@ -57,11 +58,11 @@ a {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     position: relative;
-    top: 180px;
+    top: 210px;
 }
 
 a.one {
-    margin-top: 30px;
+margin-bottom: 10px;
 }
 
 a:hover {
