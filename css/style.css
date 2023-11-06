@@ -60,9 +60,19 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
-    transition: transform 500ms;
+    transition: transform 750ms;
 }
 
+a.one {
+    background-image: url(img/static.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 99%;
+}
+
+a.one:hover {
+    background-image: url(img/cat.gif);
+}
 a.two {
     margin-top: 30px;
 }
@@ -71,23 +81,5 @@ a:hover,
 a:focus-visible {
     color: red;
     transform: translateY(-0.5rem);
-    transition: transform 200ms;
-}
-
-img.cat {
-    margin-bottom: -416px;
-    margin-left: -260px;
-    height: 200px;
-    position: relative;
-    animation-name: moving;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    animation-iteration-count:2;
-    animation-direction:alternate;
-}
-
-@keyframes moving {
-    0% {left: 0px;}
-    100% {left: 1950px;}
+    transition: transform 250ms;
 }
