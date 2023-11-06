@@ -63,14 +63,14 @@ a {
 }
 
 a.one {
-    background-image: url(img/static.png);
+    background-image: url(img/bunnystatic.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 99%;
+    background-size:contain;
+    background-position-x: 95%;
 }
 
 a.one:hover {
-    background-image: url(img/cat.gif);
+    background-image: url(img/bunny.gif);
 }
 a.two {
     margin-top: 30px;
