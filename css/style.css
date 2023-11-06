@@ -82,3 +82,8 @@ a:focus-visible {
     transform: translateY(-0.5rem);
     transition: transform 250ms;
 }
+
+a:active {
+    color:red;
+    transform: translateY(4px)
+}
