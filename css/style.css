@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
+#body-home {
     background: url(img/grid.jpg);
     background-blend-mode:hard-light;
     background-size: cover;
@@ -27,11 +27,11 @@ body {
     text-align: center;
 }
 
-h1 {
+#header h1 {
     font-size: 35px;
 }
 
-p {
+#header p {
     font-size: 15px;
     margin-top: 30px;
 }
@@ -42,7 +42,7 @@ p {
     padding: 5px;
 }
 
-a {
+.link a{
     background-color: rgb(255, 255, 255);
     color: rgba(79, 39, 223, 0.918);
     text-decoration: none;
@@ -62,28 +62,88 @@ a {
     transition: transform 750ms;
 }
 
-a.one {
+.link-zoo{
     background-image: url(img/bunnystatic.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: 95%;
 }
 
-a.one:hover {
+.link-zoo:hover {
     background-image: url(img/bunny.gif);
 }
-a.two {
+.link-form a{
     margin-top: 30px;
 }
 
-a:hover,
-a:focus-visible {
+.link a:hover,
+.link a:focus-visible {
     color: red;
     transform: translateY(-0.5rem);
     transition: transform 250ms;
 }
 
-a:active {
+.link a:active {
     color:red;
     transform: translateY(4px)
+}
+
+#zoo {
+    background-color: rgb(255, 240, 216);
+}
+
+.header-zoo{
+    background: url(../xyz-zoo/image/zoo.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-zoo::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(248, 245, 243, 0.425);
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-zoo h1{
+    font-family: 'Oleo Script';
+    color: black;
+    z-index: 10;
+    font-size: 100px;
+}
+
+.list ol{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:2%;  
+    background-color:rgba(255, 255, 255, 0.384);
+    border-radius: 30px;
+}
+
+.list ul {
+
+}
+
+.box{
+    background: rgb(243, 222, 177);
+    padding: 10px;
+    min-height: 800px;
+    margin: 60px;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin-inline: 30px;
+    border-radius: 20px;
+    padding-inline-start: 30px;
 }
