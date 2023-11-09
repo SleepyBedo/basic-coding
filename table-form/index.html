@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table-form</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         table,
         th,
@@ -12,71 +13,74 @@
         }
     </style>
 </head>
-<body>
-    <h1><u>TABLE</u></h1>
-    <h2>対戦結果</h2>
-    <h3>第73回JABA九州大会</h3>
-    <h4>2021年5月9日(日) 9:00</h4>
-    <h5>試合会場：オーヴィジョンスタジアム下関</h5>
-    <table style="width:100%">
-        <thead>
-            <tr>
-                <th>チーム名</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>計</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>パナソニック</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>3</td>
-                <td>0</td>
-                <td>3</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>Honda熊本</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table style="width:100%">
-            <tr>
-                <th rowspan="4">バッテリー</th>
-                <th style="width: 40%;">Honda熊本</th>
-                <th style="width: 40%;">パナソニック</th>
-            </tr>
-            <tr>
-                <td>投手：島袋、福田、横川、内田、高山、中津<br>捕手：竹葉</td>
-                <td>投手：榎本<br>捕手：川上</td>
-            </tr>
-    </table>
+<body id="table-form">
+    <div class="contain-table-form">
+        <div class="tableonly">
+            <div class="title">
+                <h1>対戦結果</h1>
+                <h3>第73回JABA九州大会</h3>
+                <p>2021年5月9日(日) 9:00</p>
+                <p>試合会場：オーヴィジョンスタジアム下関</p>
+            </div>
+            <table style="width:100%">
+            <thead>
+                <tr>
+                    <th>チーム名</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>計</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>パナソニック</th>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>Honda熊本</th>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table style="width:100%">
+                <tr>
+                    <th rowspan="4">バッテリー</th>
+                    <th style="width: 40%;">Honda熊本</th>
+                    <th style="width: 40%;">パナソニック</th>
+                </tr>
+                <tr>
+                    <td>投手：島袋、福田、横川、内田、高山、中津<br>捕手：竹葉</td>
+                    <td>投手：榎本<br>捕手：川上</td>
+                </tr>
+        </table>
+    </div>
     <br><br>
-    <h1><u>FORM</u></h1>
     <h2>お問い合わせ</h2>
     <form>
         <label for="name">お名前 [必須]:</label>
@@ -102,5 +106,6 @@
         <br><br>
         <button type="button">確認</button>
     </form>
+    </div>
 </body>
 </html>

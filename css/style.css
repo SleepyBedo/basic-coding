@@ -88,6 +88,8 @@
     transform: translateY(4px)
 }
 
+/* Start of xyz-zoo */
+
 #zoo {
     background-color: rgb(255, 240, 216);
 }
@@ -101,7 +103,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-
+    overflow: hidden;
 }
 
 .header-zoo::after {
@@ -117,9 +119,18 @@
 
 .header-zoo h1{
     font-family: 'Oleo Script';
-    color: black;
+    color: rgb(255, 255, 255);
     z-index: 10;
     font-size: 100px;
+    background-color: rgba(250, 155, 92, 0.24);
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.list {
+    min-width: 100%;
+    max-width: 2000px;
 }
 
 .list ol{
@@ -127,16 +138,13 @@
     justify-content:space-between;
     align-items: center;
     margin:2%;  
-    background-color:rgba(255, 255, 255, 0.384);
+    background-color:rgba(243, 222, 177, 0.349);
     border-radius: 30px;
-}
-
-.list ul {
-
+    list-style-type: none;
 }
 
 .box{
-    background: rgb(243, 222, 177);
+    background: rgba(255, 255, 254, 0.74);
     padding: 10px;
     min-height: 800px;
     margin: 60px;
@@ -146,4 +154,93 @@
     margin-inline: 30px;
     border-radius: 20px;
     padding-inline-start: 30px;
+}
+
+.container {
+    overflow: hidden;
+    width: 500px;
+    height: 340px;
+}
+
+.container img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    border-radius: 15px;
+}
+
+.source {
+    background-color: rgb(250, 155, 92);
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.source a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Start of table form */
+#table-form {
+    background-color:#c0f0f4;
+    color: #64b9f5;
+}
+
+.contain-table-form {
+    background-color: rgb(255, 232, 240);
+    margin: 5% 25%;
+    padding: 2%;
+    border-radius: 50px;
+    border: 15px double white;
+    box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1800px;
+    width: 100%
+}
+
+.title {
+    color:#4cb2fa ;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.tableonly {
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 30px;
+    padding: 3%;
+}
+
+table{
+    border: solid 1.5px #000000;
+    border-collapse: collapse;
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+}
+
+table th {
+    border: solid 1px #000000;
+    background-color: rgb(220, 251, 255);
+}
+
+table td{
+    border: solid 1px #000000;
+    background-color: white;
+    color: rgb(36, 16, 54);
+    text-align: center;
+}
+
+
+
+/* Start of whatever the f is this */
+@media screen and (max-width: 1900px) {
+    .list {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 1900px;
+    }
+    
+    .list ul {
+        display: flex;
+    }
 }
