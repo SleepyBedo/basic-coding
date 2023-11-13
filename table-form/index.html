@@ -81,31 +81,35 @@
         </table>
     </div>
     <br><br>
-    <h2>お問い合わせ</h2>
-    <form>
-        <label for="name">お名前 [必須]:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="mail">メールアドレス [必須]</label>
-        <input type="text" id="mail" name="mail"><br><br>
-        <label for="phone">電話番号[任意]</label>
-        <input type="text" id="phone" name="phone"><br><br>
-        <label for="ask">ご用件 [必須]</label>
-        <select name="ask" id="ask">
-            <option hidden>選択してください</option>
-            <option value="book1">書籍についてのご質問(個人のお客様)</option>
-            <option value="book2">書籍についてのご質問(取次・書店様)</option>
-            <option value="book3">書籍についてのご質問(メディア関係者様)</option>
-            <option value="job1">アルバイト・パートに関するお問い合わせ</option>
-            <option value="job2">仕事のご依頼・お問い合わせ</option>
-            <option value="staff">外部スタッフのご希望(フリーの方、制作会社様)</option>
-            <option value="other">その他のお問合せ</option>
-        </select>
-        <br><br>
-        <label for="detail">お問い合わせ内容 [必須]</label><br>
-        <textarea name="detail" id="detail" cols="50" rows="6"></textarea>
-        <br><br>
-        <button type="button">確認</button>
-    </form>
+        <div class="form">
+            <h2>お問い合わせ</h2><br>
+            <form>
+                <label for="name">お名前 [必須]:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="mail">メールアドレス [必須]</label>
+                <input type="text" id="mail" name="mail"><br><br>
+                <label for="phone">電話番号[任意]</label>
+                <input type="text" id="phone" name="phone"><br><br>
+                <label for="ask">ご用件 [必須]</label>
+                <select name="ask" id="ask">
+                    <option hidden>選択してください</option>
+                    <option value="book1">書籍についてのご質問(個人のお客様)</option>
+                    <option value="book2">書籍についてのご質問(取次・書店様)</option>
+                    <option value="book3">書籍についてのご質問(メディア関係者様)</option>
+                    <option value="job1">アルバイト・パートに関するお問い合わせ</option>
+                    <option value="job2">仕事のご依頼・お問い合わせ</option>
+                    <option value="staff">外部スタッフのご希望(フリーの方、制作会社様)</option>
+                    <option value="other">その他のお問合せ</option>
+                </select>
+                <br><br>
+                <label for="detail">お問い合わせ内容 [必須]</label><br>
+                <textarea name="detail" id="detail" cols="50" rows="6"></textarea>
+                <br><br>
+                <div class="button">
+                    <button type="button">確認</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

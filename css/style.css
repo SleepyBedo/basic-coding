@@ -103,7 +103,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    text-align: center;
 }
 
 .header-zoo::after {
@@ -119,13 +119,22 @@
 
 .header-zoo h1{
     font-family: 'Oleo Script';
-    color: rgb(255, 255, 255);
+    color:rgba(255, 102, 0, 0.7);
     z-index: 10;
-    font-size: 100px;
-    background-color: rgba(250, 155, 92, 0.24);
+    font-size: 500%;
+    -webkit-text-stroke: 2px rgb(253, 245, 226, 0.9);
+    max-width: 800px;
+    width: 100%;
+}
+
+.header-zoo span {
+    background-color: rgba(255, 102, 0, 0.7);
     padding-left: 0.5%;
     padding-right: 0.5%;
-    border: 2px solid rgb(255, 255, 255);
+    color: rgba(255, 255, 255);
+    -webkit-text-stroke:0px;
+    border: 2px solid rgba(253, 245, 226, 0.9);
+    text-transform: uppercase;
 }
 
 .list {
@@ -146,8 +155,8 @@
 .box{
     background: rgba(255, 255, 254, 0.74);
     padding: 10px;
-    min-height: 800px;
-    margin: 60px;
+    max-height: 800px;
+    margin: 5%;
     height: 100%;
     max-width: 100%;
     display: block;
@@ -158,14 +167,16 @@
 
 .container {
     overflow: hidden;
-    width: 500px;
-    height: 340px;
+    max-width: 500px;
+    max-height: 370px;
+    height: 100%;
+    width: 100%;
 }
 
 .container img {
     object-fit: cover;
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 15px;
 }
 
@@ -189,13 +200,13 @@
 
 .contain-table-form {
     background-color: rgb(255, 232, 240);
-    margin: 5% 25%;
+    margin: 5% auto;
     padding: 2%;
     border-radius: 50px;
     border: 15px double white;
     box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.2);
-    max-width: 1800px;
-    width: 100%
+    max-width: 1000px;
+    width: 100%;
 }
 
 .title {
@@ -230,17 +241,74 @@ table td{
     text-align: center;
 }
 
+.form {
+    border-top: 7px solid #ffffff;
+    padding: 5% 10%;
+}
 
+.form h2 {
+    text-align: center;
+}
 
-/* Start of whatever the f is this */
-@media screen and (max-width: 1900px) {
-    .list {
-        margin-left: auto;
-        margin-right: auto;
-        min-width: 1900px;
-    }
-    
-    .list ul {
+.form label {
+    font-weight: bold;
+}
+
+.form input, .form select, .form textarea{
+    width: 100%;
+    display: block;
+    background-color: rgb(220, 251, 255);
+    border: none;
+    padding: 10px;
+}
+
+.button {
         display: flex;
+        justify-content: flex-end;
+}
+
+.form button {
+    width: 30%;
+    background-color: white;
+    color: #4cb2fa;
+    border: none;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.form button:hover{
+    background-color: #4cb2fa;
+    color: white;
+}
+
+.form button:active {
+    transform:translateY(5px);
+}
+/* Start of whatever this is */
+@media screen and (max-width:1000px) {
+.container {
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 370px;
+    height: 100%;
+    width: 100%;
+}
+
+
+    .list ol {
+        display: block;
+        align-items: center;
+        margin: 2%;
     }
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list li {
+    margin: 2%;
+}
 }
