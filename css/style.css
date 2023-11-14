@@ -304,7 +304,7 @@ table td{
     transform:translateY(5px);
 }
 /* Start of whatever this is */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1300px) {
 
 .header-zoo h1 {
     font-size: 400%;
